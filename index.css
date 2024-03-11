@@ -1,0 +1,84 @@
+@import 'D:\Portfolio site\node_modules\compass-mixins\lib\compass\css3';
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.oval-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff79be8b;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50px; /* This makes the menu bar oval */
+    width: 60%;
+    margin: auto;
+}
+
+.oval-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+.oval-menu a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.picture {
+    position: relative;
+    margin-top: 130px;
+}
+
+#profile-pic {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    border-radius: 50%;
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image */
+}
+#profile-pic-caption {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 30px;
+    display: block; /* Make the text a block element */
+    margin-top: 130px;
+}
+body {
+    background-color: #ff79be8b;
+    min-height: 100%;
+    color: #fff;
+    /* @include background-image(radial-gradient(center, #eee 0%,#bbb 100%)); */
+    background-image: url('http://isaacsuttell.com/img/justine.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Raleway, sans-serif;
+}
+
+#title {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    z-index: 100;
+    color: #fff;
+}
+#container {
+    z-index: -1;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.name{
+    text-align: center;
+}
